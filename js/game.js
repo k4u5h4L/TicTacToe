@@ -2,11 +2,11 @@
 let checkVal = false; // x = false, o = true
 let repeatClick = false;
 
-let arr = [];
+let arr = []; // to see if the tile is X or O
 
-let check = [];
+let check = []; // to prevent the clicking of the same tile
 
-let drawArray = [];
+let drawArray = []; // to check if the game is draw or not
 
 for (let l = 0; l < 9; l++) {
     drawArray[l] = false;
@@ -58,7 +58,7 @@ else {
 for (let i = 0; i < document.querySelectorAll('img').length; i++) {
     document.querySelectorAll('img')[i].addEventListener("click", function () {
         //console.log(event);
-        loadImage(i + 1);
+        loadImage(i);
         verifyPlay();
     });
 }
@@ -71,23 +71,23 @@ function resetScores() {
 }
 
 function loadImage(ind) {
-    con = document.querySelectorAll('img')[ind - 1];
+    con = document.querySelectorAll('img')[ind];
     //console.log(con);
-    if(checkVal && checkTile(ind - 1)) {
+    if(checkVal && checkTile(ind)) {
         con.src = "images/to.png";
         checkVal = false;
         console.log(checkVal);
-        arr[ind - 1] = 'o'
-        check[ind - 1] = true;
-        drawArray[ind - 1] = true;
+        arr[ind] = 'o'
+        check[ind] = true;
+        drawArray[ind] = true;
     }
-    else if (!checkVal && checkTile(ind - 1)) {
+    else if (!checkVal && checkTile(ind)) {
         con.src = "images/tx.png";
         checkVal = true;
         console.log(checkVal);
-        arr[ind - 1] = 'x'
-        check[ind - 1] = false;
-        drawArray[ind - 1] = true;
+        arr[ind] = 'x'
+        check[ind] = false;
+        drawArray[ind] = true;
     }
     else {
         console.log("Choose some other tile.");
