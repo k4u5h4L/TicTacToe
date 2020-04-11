@@ -47,6 +47,7 @@ function resetScores() {
     localStorage.clear();
     p1Score = 0;
     p2Score = 0;
+    window.location.reload();
 }
 
 function doThis(index) {
