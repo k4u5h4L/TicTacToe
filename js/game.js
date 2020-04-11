@@ -16,6 +16,8 @@ for (let x = 0; x < 9; x++) {
     arr[x] = 0;
 }
 
+let con;
+
 let p1Score = 0;
 let p2Score = 0;
 
@@ -44,7 +46,7 @@ else {
 for (let i = 0; i < document.querySelectorAll('img').length; i++) {
     document.querySelectorAll('img')[i].addEventListener("click", function () {
         //console.log(event);
-        doThis(i + 1);
+        loadImage(i + 1);
         verifyPlay();
     });
 }
@@ -54,46 +56,6 @@ function resetScores() {
     p1Score = 0;
     p2Score = 0;
     window.location.reload();
-}
-
-let con;
-
-function doThis(index) {
-    //console.log("The index is " + index);
-    //let checkVal; // x = false, o = true
-    switch(index) {
-        case 1: 
-            loadImage(index);
-            break;
-        case 2: 
-            loadImage(index);
-            break;
-        case 3: 
-            loadImage(index);
-            break;
-        case 4: 
-            loadImage(index);
-            break;
-        case 5: 
-            loadImage(index);
-            break;
-        case 6: 
-            loadImage(index);
-            break;
-        case 7: 
-            loadImage(index);
-            break;
-        case 8: 
-            loadImage(index);
-            break;
-        case 9: 
-            loadImage(index);
-            break;
-        default:
-            console.log("Hey, i don't think this is the way.");
-            break;
-
-    }
 }
 
 function loadImage(ind) {
