@@ -11,9 +11,5 @@ A simple game of Tic Tac Toe written in HTML CSS ad JS.
 * Game menu for choosing options before starting the game.
 * More pages with more fun stuff.
 
-### Issues:
-* The 'draw' condition is not temporarily working; may have been broken because of some other code.
-  If that occurs, please manually refresh the page to start a new game. Don't worry, your progress will be saved in the browser.
-
 ### References:
 * Template used from [colorlib](https://colorlib.com/)
