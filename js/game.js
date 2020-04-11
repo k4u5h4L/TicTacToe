@@ -18,6 +18,18 @@ for (let x = 0; x < 9; x++) {
 
 let con;
 
+// alternating turns between X and O
+let turnCount = "p1";
+if (localStorage.getItem("turn") == "p1") {
+    localStorage.setItem("turn", "p2");
+    checkVal = true;
+}
+else {
+    localStorage.setItem("turn", "p1");
+    checkVal = false;
+}
+
+
 let p1Score = 0;
 let p2Score = 0;
 
