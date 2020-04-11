@@ -303,10 +303,12 @@ function checkForDraw() {
 function print(temp1) {
     if (temp1 == true) {
         console.log("O wins");
+        alert("O wins!");
         updateScore('o');
     }
     else if (temp1 == false) {
         console.log("X wins");
+        alert("X wins!");
         updateScore('x');
     }
     else {
