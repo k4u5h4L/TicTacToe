@@ -56,222 +56,67 @@ function resetScores() {
     window.location.reload();
 }
 
+let con;
+
 function doThis(index) {
     //console.log("The index is " + index);
-    let con;
     //let checkVal; // x = false, o = true
     switch(index) {
         case 1: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 2: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 3: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 4: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 5: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 6: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 7: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 8: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         case 9: 
-            con = document.querySelectorAll('img')[index - 1];
-            //console.log(con);
-            if(checkVal && checkTile(index - 1)) {
-                con.src = "images/to.png";
-                checkVal = false;
-                console.log(checkVal);
-                arr[index - 1] = 'o'
-                check[index - 1] = true;
-                drawArray[index - 1] = true;
-            }
-            else if (!checkVal && checkTile(index - 1)) {
-                con.src = "images/tx.png";
-                checkVal = true;
-                console.log(checkVal);
-                arr[index - 1] = 'x'
-                check[index - 1] = false;
-                drawArray[index - 1] = true;
-            }
-            else {
-                console.log("Choose some other tile.");
-            }
+            loadImage(index);
             break;
         default:
             console.log("Hey, i don't think this is the way.");
             break;
 
+    }
+}
+
+function loadImage(ind) {
+    con = document.querySelectorAll('img')[ind - 1];
+    //console.log(con);
+    if(checkVal && checkTile(ind - 1)) {
+        con.src = "images/to.png";
+        checkVal = false;
+        console.log(checkVal);
+        arr[ind - 1] = 'o'
+        check[ind - 1] = true;
+        drawArray[ind - 1] = true;
+    }
+    else if (!checkVal && checkTile(ind - 1)) {
+        con.src = "images/tx.png";
+        checkVal = true;
+        console.log(checkVal);
+        arr[ind - 1] = 'x'
+        check[ind - 1] = false;
+        drawArray[ind - 1] = true;
+    }
+    else {
+        console.log("Choose some other tile.");
     }
 }
 
