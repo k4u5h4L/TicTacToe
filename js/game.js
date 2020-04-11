@@ -6,6 +6,12 @@ let arr = [];
 
 let check = [];
 
+let drawArray = [];
+
+for (let l = 0; l < 9; l++) {
+    drawArray[l] = false;
+}
+
 for (let x = 0; x < 9; x++) {
     arr[x] = 0;
 }
@@ -64,6 +70,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -71,6 +78,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -85,6 +93,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -92,6 +101,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -106,6 +116,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -113,6 +124,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -127,6 +139,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -134,6 +147,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -148,6 +162,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -155,6 +170,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -169,6 +185,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -176,6 +193,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -190,6 +208,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -197,6 +216,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -211,6 +231,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -218,6 +239,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -232,6 +254,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'o'
                 check[index - 1] = true;
+                drawArray[index - 1] = true;
             }
             else if (!checkVal && checkTile(index - 1)) {
                 con.src = "images/tx.png";
@@ -239,6 +262,7 @@ function doThis(index) {
                 console.log(checkVal);
                 arr[index - 1] = 'x'
                 check[index - 1] = false;
+                drawArray[index - 1] = true;
             }
             else {
                 console.log("Choose some other tile.");
@@ -282,19 +306,9 @@ function verifyPlay() {
 }
 
 function checkForDraw() {
-    /*let k;
-    let count = 0;
-    for (k = 0; k < 9; k++) {
-        if (check[k] != 0) {
-            count++;
-        }
-    }
-    if (count == 9) {
-        alert("The round is draw.");
-    }*/
-    if (check[0] == 0 && check[1] == 0 && check[2] == 0 && check[3] == 0 && check[4] == 0 && check[5] == 0 && check[6] == 0 && check[7] == 0 && check[8] == 0 && check[9] == 0) {
+    if (drawArray[0] && drawArray[1] && drawArray[2] && drawArray[3] && drawArray[4] && drawArray[5] && drawArray[6] && drawArray[7] && drawArray[8]) {
         alert("Draw.");
-        //window.location.reload();
+        window.location.reload();
     }
     else {
         console.log("Continue playing...")
