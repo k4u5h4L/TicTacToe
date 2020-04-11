@@ -71,6 +71,7 @@
                 </strong>
               </h1>
               <p>A small game of tic tac toe, made out of boredom :)</p>
+              <button class="btn" onclick="resetScores()">Reset Scores</button>
             </div>
           </div>
         </div>
@@ -95,26 +96,44 @@
               <img src="images/tc.png" class="img-fluid" height="100px" width="100px" alt="cell">
               <img src="images/tc.png" class="img-fluid" height="100px" width="100px" alt="cell">
               </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-              <!--<div class="game--container img-fluid">
-                <div data-cell-index="0" class="cell"></div>
-                <div data-cell-index="1" class="cell"></div>
-                <div data-cell-index="2" class="cell"></div>
-                <div data-cell-index="3" class="cell"></div>
-                <div data-cell-index="4" class="cell"></div>
-                <div data-cell-index="5" class="cell"></div>
-                <div data-cell-index="6" class="cell"></div>
-                <div data-cell-index="7" class="cell"></div>
-                <div data-cell-index="8" class="cell"></div>
-              </div>-->
-              <!--<h2 class="game--status"></h2>
-              <button class="game--restart">Restart Game</button>-->
+    <section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Scoreboard</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="" id="player1">0</strong>
+                <span>Player 1<br>X</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="" id="player2">0</strong>
+                <span>Player 2<br>O</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <!--<strong class="number" data-number="" id="winner">0</strong>-->
+                <span id="winner"></span>
+                <span>Player Leading Right Now</span>
+              </div>
             </div>
           </div>
         </div>
