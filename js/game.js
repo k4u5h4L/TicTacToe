@@ -16,6 +16,7 @@ for (let x = 0; x < 9; x++) {
     arr[x] = 0;
 }
 
+
 let con;
 
 // alternating turns between X and O
@@ -34,10 +35,24 @@ let p1Score = 0;
 let p2Score = 0;
 
 p1Score =  localStorage.getItem("player1Score");
-document.getElementById('player1').setAttribute("data-number", p1Score);
+
+if (p1Score == null) {
+    document.getElementById('player1').innerHTML = 0;
+}
+else {
+    document.getElementById('player1').innerHTML = p1Score;
+}
+
+
 
 p2Score =  localStorage.getItem("player2Score");
-document.getElementById('player2').setAttribute("data-number", p2Score);
+
+if (p2Score == null) {
+    document.getElementById('player2').innerHTML = 0;
+}
+else {
+    document.getElementById('player2').innerHTML = p2Score;
+}
 
 if (p1Score > p2Score) {
     document.getElementById('winner').innerHTML = "Player 1"
