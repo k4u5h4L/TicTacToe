@@ -40,19 +40,13 @@ p2Score =  localStorage.getItem("player2Score");
 document.getElementById('player2').setAttribute("data-number", p2Score);
 
 if (p1Score > p2Score) {
-    localStorage.getItem("winnerPlayer");
     document.getElementById('winner').innerHTML = "Player 1"
-    localStorage.setItem("winnerPlayer", "player2");
 }
 else if (p2Score > p1Score) {
-    localStorage.getItem("winnerPlayer");
     document.getElementById('winner').innerHTML = "Player 2"
-    localStorage.setItem("winnerPlayer", "player2");
 }
 else {
-    localStorage.getItem("winnerPlayer");
     document.getElementById('winner').innerHTML = "Draw"
-    localStorage.setItem("winnerPlayer", "draw");
 }
 
 for (let i = 0; i < document.querySelectorAll('img').length; i++) {
